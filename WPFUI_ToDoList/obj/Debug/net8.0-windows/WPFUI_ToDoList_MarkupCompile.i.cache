@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\kajlj\source\repos\WPFUI_ToDoList\WPFUI_ToDoList\App.xaml
-
+6-1472921293
 1282391436
-5-119158788
+161336073179
 227-1722059333
-
+MainWindow.xaml;Views\CreateToDoTaskPage.xaml;Views\DashboardView.xaml;Views\LoginView.xaml;Views\SignUpView.xaml;Views\ToDoTaskListPage.xaml;
 
 False
 

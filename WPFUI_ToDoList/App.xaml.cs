@@ -3,6 +3,7 @@ using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Wpf.Ui;
 
@@ -23,7 +24,7 @@ namespace WPFUI_ToDoList
             .ConfigureAppConfiguration(c => { c.SetBasePath(Path.GetDirectoryName(Assembly.GetEntryAssembly()!.Location)); })
             .ConfigureServices((context, services) =>
             {
-                throw new NotImplementedException("No service or window was registered.");
+                services.AddSingleton<MainWindow>();
             }).Build();
 
         /// <summary>

@@ -1,0 +1,57 @@
+﻿<Page x:Class="WPFUI_ToDoList.Views.CreateToDoTaskPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+      Background="{DynamicResource ApplicationBackgroundBrush}"
+      ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+      Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+      xmlns:local="clr-namespace:WPFUI_ToDoList.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateToDoTaskPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Kreiraj zadatak" FontSize="30"/>
+        <Label Grid.Row="3" Grid.Column="2" Content="Zadatak (tekst):" VerticalContentAlignment="Bottom"/>
+        <ui:TextBox Grid.Row="4" Grid.Column="2"/>
+        <Label Content="Rok odrađivanja:" Grid.Column="2" Grid.Row="6" VerticalContentAlignment="Bottom"/>
+        <DatePicker Grid.Row="7" Grid.Column="2"/>
+        <Label Grid.Row="3" Grid.Column="4" Content="Važnost:" VerticalContentAlignment="Bottom"/>
+        <StackPanel Grid.Row="4" Grid.Column="4">
+            <RadioButton Content="Iznimno važno"/>
+            <RadioButton Content="Obavezno"/>
+            <RadioButton Content="Neobavezan"/>
+        </StackPanel>
+        <Label Content="Note:" Grid.Row="3" Grid.Column="6" VerticalContentAlignment="Bottom"/>
+        <ui:TextBox Grid.Row="4" Grid.Column="6"/>
+
+        <ui:Button Content="Kreiraj zadatak" Grid.Row="8" Grid.Column="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Page>
