@@ -9,9 +9,13 @@ namespace WPFUI_ToDoList.Models
 {
     public class User
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public List<ToDoTask> TaskList { get; set; }
+        public string Username { get; }
+        public string Password { get; }
+
+        public User(string username, string password)
+        {
+            Username = username;
+            Password = password;
+        }
     }
 }

@@ -8,10 +8,19 @@ namespace WPFUI_ToDoList.Models
 {
     public class ToDoTask
     {
-        public int Id { get; set; }
-        public string Text {  get; set; }
-        public string Importance { get; set; }
-        public DateTime DueDate { get; set; }
-        public string? Note { get; set; }
+        public string Text {  get; }
+        public string Importance { get; }
+        public DateTime DueDate { get; }
+        public string? Note { get; }
+        public User UserID { get; }
+
+        public ToDoTask(string text, string importance, DateTime dueDate, string? note, User userID)
+        {
+            Text = text;
+            Importance = importance;
+            DueDate = dueDate;
+            Note = note;
+            UserID = userID;
+        }
     }
 }
