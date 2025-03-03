@@ -35,6 +35,6 @@ namespace WPFUI_ToDoList.ViewModels
                 OnPropertyChanged(nameof(Password));
             }
         }
-        public ICommand SignUpCommand { get; }
+        public AsyncCommandBase SignUpCommand { get; }
     }
 }

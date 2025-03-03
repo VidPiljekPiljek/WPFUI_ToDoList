@@ -31,9 +31,9 @@
         <Label Content="Korisničko ime:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
         <Label Content="Lozinka:" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="5"/>
         <Label Content="Vid Piljek, 2024." Grid.Row="7" Grid.Column="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="5"/>
-        <ui:TextBox Grid.Row="4" Grid.Column="1"/>
-        <ui:PasswordBox Grid.Row="6" Grid.Column="1"/>
-        <ui:Button Command="{Binding}" Grid.Column="1" Content="Login" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"/>
+        <ui:TextBox x:Name="txtUsername" Grid.Row="4" Grid.Column="1" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
+        <ui:PasswordBox x:Name="txtPassword" Grid.Row="6" Grid.Column="1" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"/>
+        <ui:Button Command="{Binding SignUpCommand}" Grid.Column="1" Content="Login" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100"/>
         <ui:HyperlinkButton Command="{Binding}" Content="Klikni ovdje ako već imaš račun." Grid.Row="5" Grid.Column="2"/>
 
         <StackPanel Grid.Column="1" Grid.Row="0">

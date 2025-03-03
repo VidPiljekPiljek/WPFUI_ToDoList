@@ -15,6 +15,6 @@ namespace WPFUI_ToDoList.DTOS
         public string Importance { get; set; }
         public DateTime DueDate { get; set; }
         public string? Note { get; set; }
-        public User UserID { get; set; }
+        public UserDTO UserID { get; set; }
     }
 }

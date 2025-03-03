@@ -2,10 +2,12 @@
 using System.Reflection;
 using System.Windows;
 using System.Windows.Threading;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Wpf.Ui;
+using WPFUI_ToDoList.DbContexts;
 
 namespace WPFUI_ToDoList
 {
@@ -44,6 +46,10 @@ namespace WPFUI_ToDoList
         private void OnStartup(object sender, StartupEventArgs e)
         {
             _host.Start();
+            DbContextOptions options = new DbContextOptionsBuilder().UseSqlite("Data Source=toDoListApp.db").Options;
+            WPFUI_ToDoListDBContext dbContext = new WPFUI_ToDoListDBContext(options);
+
+            dbContext.Database.Migrate();
         }
 
         /// <summary>

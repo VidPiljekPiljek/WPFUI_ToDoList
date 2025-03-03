@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\kajlj\source\repos\WPFUI_ToDoList\WPFUI_ToDoList\obj\Debug\net8.0-windows\
+C:\Users\pilje\source\repos\WPFUI_ToDoList\WPFUI_ToDoList\obj\Debug\net8.0-windows\
 WPFUI_ToDoList
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\kajlj\source\repos\WPFUI_ToDoList\WPFUI_ToDoList\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\pilje\source\repos\WPFUI_ToDoList\WPFUI_ToDoList\App.xaml
 6-1472921293
 1282391436
-231663808290
-249-896060990
+34-709846120
+249-946393182
 MainWindow.xaml;Views\CreateToDoTaskPage.xaml;Views\DashboardView.xaml;Views\LoginView.xaml;Views\SignUpView.xaml;Views\ToDoTaskListPage.xaml;
 
 False
